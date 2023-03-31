@@ -1,0 +1,39 @@
+body {
+    background-image: url('../css/back.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 100px;
+  }
+
+  .todo{
+    border: solid;
+    border-color: rgb(0, 107, 247);
+    border-width: 1px;
+    padding: 50px;
+    width: auto;
+    
+  
+  }
+
+  .cuadro {
+    margin: auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+   
+
+  }
+
+  
+.cuadro2 {
+  border: solid;
+  margin: auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+

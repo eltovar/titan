@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <form method="POST" action="/emp">
+        {% csrf_token %}
+        <div class="cuadro">
+            <br>
+            <p>
+                <h3>ENTRA</h3>
+                <h2>REGISTRATE GRATIS</h2>
+
+            </p>
+            <div>
+                <p>Ingresa tu ID</p>{{ form.eid }}
+            </div>
+            <div>
+                <p>Nombre de usuario</p>{{ form.ename }}
+            </div>
+            <div>
+                <p>ingresa tu email:</p>{{ form.eemail }}
+            </div>
+            <div>
+                <p>Tu contacto</p>{{ form.econtact }}
+            </div>
+            <div>
+                <div>
+                    <p>sugerencia</p>{{ form.econtact }}
+                </div>
+                <div>
+                    <div>
+                        <p>pelirojas</p>{{ form.econtact }}
+                    </div>
+                    <div>
+                <br>
+                <button type="submit">ENTRAR</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+body {
+    background-image: url('../css/back.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 100px;
+  }
+  
+  .cuadro {
+    margin: auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #b90707;
+    text-align: center;
+    border-radius: 50px;
+  }
+  
+  .cuadro h3 {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .cuadro p {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  .cuadro button[type=submit] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 11px;
+    border: 10%;
+    cursor: pointer;
+    border-radius: 30px
+  
+  }
+  
+  .cuadro {
+    margin: auto;
+    max-width: 500px;
+    padding: 20px;
+    border: none;
+    background-color: #383535;
+    text-align: center;
+    border-radius: 50px;
+  }
+  
+  .cuadro h3 {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .cuadro p {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  .cuadro button[type=submit] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 11px;
+    border: 10%;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  .cuadro button[type=submit]:hover {
+    background-color: #006eff;
+  }
+  

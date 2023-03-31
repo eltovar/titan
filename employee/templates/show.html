@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Record</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+</head>
+
+<body class="todo">
+    <table>
+        <thead>
+            <tr class="cuadro">
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Emails</th>
+                <th>Contacto</th>
+                <th>sugerencia</th>
+                <th>pelirojas</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody class="cuadro2">
+            {% for employee in employees %}
+            <tr>
+                <td>{{ employee.eid }}</td>
+                <td>{{employee.ename}}</td>
+                <td>{{employee.eemail}}</td>
+                <td>{{employee.econtact}}</td>
+                <td>{{employee.econtact}}</td>
+                <td>{{employee.econtact}}</td>                 <td>
+                    <a href="/edit/{{ employee.id }}">Edit</a>
+                    <a href="/delete/{{employee.id}}">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <button><a style="color:rgb(0, 0, 0);" href="/emp">Add New Record</a></button>
+</body>
+
+</html>
